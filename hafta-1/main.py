@@ -1,3 +1,8 @@
+#- Neuron, layer, parameter ve loss kavramları
+#- Forward pass mantığı
+#- Modelin öğrenmesi ne demektir
+#- Gradient descent sezgisi
+
 import matplotlib.pyplot as plt
 
 
@@ -93,7 +98,7 @@ plt.show()
 
 
 
-learning_rate = 0.1
+learning_rate = 0.001
 h = 0.0001
 
 #gradient 
@@ -125,7 +130,7 @@ for i in range(100):
         print(
             "step:", i,
             "w1:", round(w1, 4),
-            "loss:", round(new_loss, 8)
+            "loss:", round(new_loss, 4)
         )
 
 
