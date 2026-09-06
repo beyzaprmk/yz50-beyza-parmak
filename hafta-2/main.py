@@ -100,11 +100,11 @@ def run_value_experiments():
 
     print("Forward:")
 
-    print("a =", a.data)
+    print("a =", a.data, a._children)
     print("b =", b.data)
-    print("c =", c.data)
-    print("d =", d.data)
-    print("f =", f.data)
+    print("c =", c.data, c._children)
+    print("d =", d.data, d._children)
+    print("f =", f.data, f._children)
 
    
     f.backward()

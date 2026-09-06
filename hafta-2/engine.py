@@ -135,7 +135,7 @@ class Value:
                 b.grad += node.grad
 
            
-            elif node._op == "*":   
+            elif node._op == "*":  
 
                 a, b = node._children
 

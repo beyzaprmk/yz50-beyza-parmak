@@ -11,6 +11,7 @@ class Neuron:
         total = self.bias
 
         for wi, xi in zip(self.weights, x):
+            #z=w1​x1​+w2​x2​+⋯+wn​xn​+b
             total = total + wi * xi
 
         return total.tanh()
