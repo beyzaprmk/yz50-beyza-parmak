@@ -5,12 +5,12 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-data_path = "hafta-3/turkish_names.txt"
+data_path = "./turkish_names.txt"
 output_path = "hafta-3/outputs/turkish_bigram_matrix.png"
 
 number_of_sumbles = 20
 
-epoches = 200
+epoches = 400
 lr = 1.0 
 
 smoothing = 1.0
@@ -203,7 +203,7 @@ def calculate_count_nll(names, stoi, P):
             ix2 = stoi[ch2]
 
             prob = P[ix1, ix2]
-            log_likelihood += torch.log(prob)
+            log_likelihood += torch.log(prob) #log(ab) = loga + logb 
             n += 1
 
     nll = -log_likelihood / n
