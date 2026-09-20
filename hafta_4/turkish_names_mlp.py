@@ -154,7 +154,7 @@ def task3():
     ix = torch.randint(0, Xtr.shape[0], (BATCH_SIZE,))
     Xbatch, Ybatch = Xtr[ix], Ytr[ix]
 
-    for step in range(1000):
+    for step in range(10000):
         loss, _ = forward(Xbatch, Ybatch, *model[:5])
 
         for p in model[5]:

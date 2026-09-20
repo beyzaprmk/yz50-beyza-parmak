@@ -44,6 +44,7 @@ def forward_bn(X, Y, model, training, running_mean, running_var, gamma, beta):
 
 
 def train_bn(Xtr, Ytr, Xdev, Ydev, vocab_size):
+    torch.manual_seed(10)
     model = create_model(vocab_size)
     gamma = torch.ones(100, requires_grad=True)
     beta = torch.zeros(100, requires_grad=True)
@@ -79,6 +80,7 @@ def train_bn(Xtr, Ytr, Xdev, Ydev, vocab_size):
 
 
 def train_no_bn(Xtr, Ytr, Xdev, Ydev, vocab_size):
+    torch.manual_seed(10)
     model = create_model(vocab_size)
 
     for step in range(STEPS):
