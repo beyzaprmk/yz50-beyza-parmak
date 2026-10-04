@@ -3,11 +3,6 @@ import torch
 from data_loader import load_data, get_batch
 from bigram import BigramLanguageModel
 
-
-# -----------------------------
-# Hyperparameters
-# -----------------------------
-
 BATCH_SIZE = 64
 BLOCK_SIZE = 8
 
