@@ -1,0 +1,2 @@
+dataset,data_path,characters,utf8_bytes,vocab_size,train_tokens,validation_tokens,bytes_per_token,n_embd,n_head,n_layer,block_size,batch_size,learning_rate,max_steps,parameters,best_step,train_loss,val_loss,training_seconds,device,checkpoint
+Turkish,/Users/beyzaparmak/Desktop/YZ50/yz50-beyza-parmak/hafta_8/data/kuyruksuz_tilki.txt,760153,843685,280,582786,64754,1.302908,128,4,4,128,64,0.0003,1000,880152,1000,1.759657,1.704945,99.05,mps,/Users/beyzaparmak/Desktop/YZ50/yz50-beyza-parmak/hafta_9/outputs/checkpoints/week9_turkish_bpe_best.pt
